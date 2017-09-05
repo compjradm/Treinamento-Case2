@@ -11,16 +11,18 @@ p, a{
   font-size: 1.3rem;
   color: rgb(66, 33, 79);
   text-align: center;
+  margin: auto;
 }
 h1{
   font-family: "BigNoodleTitling", sans-serif;
   font-size: 3.4rem;
   color: rgb(142, 68, 145);
+  margin: auto;
 }
 
 .section{
   display: block;
-  background-color: white;
+  background-color: black;
   background-position: center;
   margin: auto;
   padding: 10px;
@@ -49,6 +51,7 @@ h1{
     visibility: hidden;
   }
 }
+
 @media (min-width:500px){
   .section, .section_img_container{
     max-width: 720px;
@@ -59,4 +62,17 @@ h1{
   .section, .section_img_container{
     max-width: 768px;
   }
+}
+
+@media (max-width: 400px){
+    html{
+      font-size: 10px;
+    }
+
+    .img_thumb{
+      width: 30px;
+    }
+    .section {
+        max-width: 360px;
+    }
 }
