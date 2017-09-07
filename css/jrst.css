@@ -1,6 +1,5 @@
 html{
   font-size: 18px;
-
 }
 body{
   background-color: rgb(142, 68, 145);
@@ -52,7 +51,7 @@ iframe{
   background-position: center;
   margin: auto;
   padding: 10px;
-  width: 800px
+  width: 85%;
 }
 
 .img_container{
@@ -92,7 +91,7 @@ iframe{
   list-style-type: none;
 }
 
-@media (max-width:499px) {
+@media screen and (max-width:499px) {
   iframe{
     height: 800px;
   }
