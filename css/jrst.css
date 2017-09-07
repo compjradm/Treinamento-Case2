@@ -1,4 +1,4 @@
-html{
+﻿html{
   font-size: 18px;
 
 }
@@ -117,3 +117,44 @@ iframe{
     max-width: 768px;
     }
 }
+
+@media only screen and (max-width: 360px){ /* quando a tela chegar a 360px ele vai mudar a direção do menu*/
+	
+	h1{	
+		font-size:2.8rem;	
+	}
+	h2{	
+		font-size:2rem;		
+	}
+	
+	p{
+	   text-align: justify;
+	   margin: auto;
+	   margin-left: 0.3em;
+           margin-right: 0.3em;
+	}	
+	#navegacao{
+	   height: 300px;
+	}
+	#navegacao ul li { 
+	   flex-grow: 1; 
+        }
+	
+	#navegacao ul{
+	    display: block;
+	}
+
+        #navegacao{
+	    position: relative;   
+	    flex-direction: column;
+	    align-items: center;
+       }
+	
+	.section{	
+	    width: 100%;
+	    text-align: center;
+	    margin: 0px auto;
+        }
+
+}
+
