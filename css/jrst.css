@@ -117,3 +117,50 @@ iframe{
     max-width: 768px;
     }
 }
+
+@media only screen and (min-width: 360px) and (max-width:500px) {
+  .hide_mobile {
+    display: none;
+  }
+  
+  .section {
+    max-width: 95%;
+  }
+
+  .section h1 { 
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  .section h2 {
+    font-size: 1.75em;
+  }
+
+  .section p {
+    text-align: left;
+    font-size: 1.25em;
+  }
+
+  .section ul li {
+    font-size: 1em;
+  }
+
+  #navegacao ul li {
+      font-size: 1em;
+  }
+
+  .container_img_containers{
+    width: 70%;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+iframe{
+  width: 100%;
+  border-style: none;
+  height: 58%;
+  scrolling: no;
+}
+
+}
