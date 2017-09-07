@@ -39,11 +39,11 @@ h1{
   overflow: hidden;
 }
 
-@media (max-width:499px) {
-
-  .img_thumb{
-    width: 70px;
-  }
+@media only screen and (max-width:499px) {
+	
+	.img_thumb{
+		width: 70px;
+	}
   .section_img_container{
     height: 1px;
     visibility: hidden;
