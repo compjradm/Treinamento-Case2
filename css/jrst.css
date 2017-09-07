@@ -16,6 +16,7 @@ h1{
   font-family: "BigNoodleTitling", sans-serif;
   font-size: 3.4rem;
   color: rgb(142, 68, 145);
+  text-align: center;
 }
 h2{
   font-family: "BigNoodleTitling", sans-serif;
@@ -34,6 +35,7 @@ iframe{
     padding:0px;
     margin:0px;
     list-style:none;
+    width: 100%;
 }
 
 #navegacao ul li { display: inline-block; }
@@ -52,7 +54,8 @@ iframe{
   background-position: center;
   margin: auto;
   padding: 10px;
-  width: 800px
+  max-width: 800px;
+  width: 100%;
 }
 
 .img_container{
@@ -63,12 +66,13 @@ iframe{
   display: block;
   background-position: center;
   margin: auto;
-  /*padding: 10px;*/
   overflow: hidden;
   max-height: 350px;
+
 }
 .section_img{
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
 }
 .img_gallery_center{
   margin: auto;
@@ -92,20 +96,13 @@ iframe{
   list-style-type: none;
 }
 
-@media (max-width:499px) {
-  iframe{
-    height: 800px;
-  }
-
-  .img_thumb{
-    width: 70px;
-  }
-  .hide_mobile{
-    width: 1px;
-    height: 1px;
-    visibility: hidden;
+@media (max-width:499px){
+  .section, .section_img_container{
+    max-width: 360px;
+    min-width: 300px;
   }
 }
+
 @media (min-width:500px){
   .section, .section_img_container{
     max-width: 720px;
@@ -115,5 +112,5 @@ iframe{
 @media (min-width:800px){
   .section, .section_img_container{
     max-width: 768px;
-    }
+  }
 }
