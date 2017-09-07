@@ -23,23 +23,24 @@ h1{
   background-color: white;
   background-position: center;
   margin: auto;
-  padding: 10px;
+  padding: 10%;
   width: 90%
 }
 
 .img_container{
   display: inline-block;
-  padding: 10px;
+  padding: 10%;
 }
 .section_img_container{
   display: block;
   background-position: center;
   margin: auto;
-  padding: 10px;
+  padding: 10%;
   overflow: hidden;
 }
 
 @media (max-width:499px) {
+
 
   .img_thumb{
     width: 70px;
