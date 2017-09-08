@@ -8,7 +8,7 @@ body{
 }
 p, a, .section > ul{
   font-family: "Blogger Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: rgb(66, 33, 79);
   text-align: center;
 }
@@ -26,20 +26,20 @@ h2{
 iframe{
   width: 100%;
   border-style: none;
-  height: 580px;
+  height: 100%;
   scrolling: no;
 }
 
 #navagecao ul {
-    padding:0px;
-    margin:0px;
+    padding:0%;
+    margin:0%;
     list-style:none;
 }
 
 #navegacao ul li { display: inline-block; }
 
 #navegacao ul li a {
-    padding: 2px 10px;
+    padding: 10% 10px;
     display: inline-block;
 
     /* visual do link */
@@ -51,24 +51,27 @@ iframe{
   background-color: white;
   background-position: center;
   margin: auto;
-  padding: 10px;
-  width: 800px
+  padding: 1%;
+  width: 80%;
 }
 
 .img_container{
   display: inline-block;
-  padding: 10px;
+  padding: 1%;
+  width:auto;
 }
 .section_img_container{
-  display: block;
+  display: auto;
   background-position: center;
   margin: auto;
-  /*padding: 10px;*/
   overflow: hidden;
-  max-height: 350px;
+  max-height: 10%;
+  max-width:50%;
+  min-width:5%;
+  
 }
 .section_img{
-  width: 800px;
+  max-width: 100%;
 }
 .img_gallery_center{
   margin: auto;
@@ -92,28 +95,57 @@ iframe{
   list-style-type: none;
 }
 
-@media (max-width:499px) {
+@media (max-width:360px) {
   iframe{
-    height: 800px;
+    height:30%;
   }
 
   .img_thumb{
-    width: 70px;
+    width: 30%;
   }
   .hide_mobile{
-    width: 1px;
-    height: 1px;
+    width: 1%;
+    height: 1%;
     visibility: hidden;
+  }
+  
+  .link{
+	font-size:0.5rem;
+  }
+  h1{
+	font-size: 2rem;
+  }
+}
+
+@media (max-width:499px) {
+  iframe{
+    height:60%;
+  }
+
+  .img_thumb{
+    width: 30%;
+  }
+  .hide_mobile{
+    width: 1%;
+    height: 1%;
+    visibility: hidden;
+  }
+  
+  .link{
+	font-size:0.9rem;
+  }
+  h1{
+	font-size: 2.7rem;
   }
 }
 @media (min-width:500px){
   .section, .section_img_container{
-    max-width: 720px;
-    min-width: 480px;
+    max-width: 85%;
+    min-width: 70%;
   }
 }
 @media (min-width:800px){
   .section, .section_img_container{
-    max-width: 768px;
+    max-width: 80%;
     }
 }
